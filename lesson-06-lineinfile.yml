@@ -1,0 +1,11 @@
+- hosts: "*"
+  become: yes
+  tasks:
+  - name: Configure sysctl
+    lineinfile:
+      dest: /etc/sysctl.conf
+      regexp: "net.ipv4.ip_forward"
+      line: "net.ipv4.ip_forward=1"
+      state: present
+
+# :vim: set sw=2 et ts=2 :

@@ -1,0 +1,18 @@
+- hosts: "*"
+  become: yes
+  tasks:
+  - name: Edit /etc/ssh/sshd_config
+    lineinfile:
+      dest: /etc/ssh/sshd_config
+      regexp: "PrintMotd"
+      line: "PrintMotd yes"
+      state: present
+    notify: Restart sshd
+
+  handlers:
+  - name: Restart sshd
+    service:
+      name: ssh
+      state: restarted
+
+# :vim: set sw=2 et ts=2 :

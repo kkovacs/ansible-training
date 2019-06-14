@@ -1,0 +1,10 @@
+- hosts: "*"
+  become: yes
+  tasks:
+  - name: Installing htop
+    shell: |
+      apt-get install htop
+    args:
+      creates: /usr/bin/htop
+
+# :vim: set sw=2 et ts=2 :

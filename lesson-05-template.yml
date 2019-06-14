@@ -1,0 +1,11 @@
+- hosts: "*"
+  become: yes
+  tasks:
+  - name: Building /etc/resolv.conf
+    copy:
+      content: |
+        search lan
+        nameserver {{ my_nameserver }}
+      dest: /etc/resolv.conf
+
+# :vim: set sw=2 et ts=2 :

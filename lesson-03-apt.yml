@@ -1,0 +1,13 @@
+- hosts: "*"
+  become: yes
+  tasks:
+  - name: Installing packages
+    apt:
+      name:
+        - htop
+        - socat
+        - tcpdump
+      state: present
+      cache_valid_time: 86400
+
+# :vim: set sw=2 et ts=2 :

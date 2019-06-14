@@ -1,0 +1,10 @@
+- import_playbook: lesson-zz-musthavepython.yml
+- import_playbook: lesson-01-shell.yml
+- import_playbook: lesson-02-shell.yml
+- import_playbook: lesson-03-apt.yml
+- import_playbook: lesson-04-copy.yml
+- import_playbook: lesson-05-template.yml
+- import_playbook: lesson-06-lineinfile.yml
+- import_playbook: lesson-07-lineinfile-with.yml
+- import_playbook: lesson-08-handlers.yml
+- import_playbook: lesson-09-with-and-hostvars.yml

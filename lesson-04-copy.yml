@@ -1,0 +1,19 @@
+- hosts: "*"
+  become: yes
+  tasks:
+  - name: Deploying /etc/motd
+    copy:
+      dest: /etc/motd
+      mode: 0644
+      owner: root
+      group: root
+      content: |
+        ACHTUNG - ALLES LOOKENPEEPERS!
+
+        Das Machine is nicht fur gefingerpoken und mittengrabben. Ist easy
+        schnappen der springenwerk, blowenfusen und poppencorken mit
+        spitzensparken. Ist nicht fur gewerken by das dummkopfen. Das
+        rubbernecken sightseeren musten keepen das cotten-pickenen hands in das
+        pockets - relaxen und watchen das blinkenlights.
+
+# :vim: set sw=2 et ts=2 :
