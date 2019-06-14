@@ -1,9 +1,9 @@
 
 # Intro
 
-Ender's game
-Agent-less, works via SSH
-Only needs python on the other side
+- Ender's game
+- Agent-less, works via SSH
+- Only needs python on the other side
 
 # Lesson 1: Basic shell command
 
@@ -22,9 +22,9 @@ Test with:
 
 Mention:
 
--v
--vvv
---limit -l
+- `-v`
+- `-vvv`
+- `--limit -l`
 
 Further reading: https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html
 
